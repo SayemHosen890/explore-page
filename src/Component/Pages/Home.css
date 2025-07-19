@@ -1,0 +1,22 @@
+.first-field{
+    width: 100;
+}
+.Button{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 100px;
+    margin-top: 8px;
+}
+.Card{
+    color: black;
+    text-align: center;
+    font-weight: 400;
+}
+.Bg{
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    padding-top: 130px;
+} 
