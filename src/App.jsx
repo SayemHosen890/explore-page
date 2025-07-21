@@ -9,6 +9,9 @@ import Login from './Component/Pages/Login';
 import Signup from './Component/Pages/Signup';
 import Explore from './Component/Pages/Explore';
 import Footer from './Component/Pages/Footer';
+import Details from './Component/Pages/Details/Details';
+import BookingPage from './Component/Pages/Details/Booking';
+import BookingConfirm from './Component/Pages/Details/BookingConfirm';
 
 const App = () => {
   return (
@@ -22,6 +25,9 @@ const App = () => {
         <Route path="/explore" element={<Explore></Explore>} />
         <Route path="/how-it-works" element={<Howutworks />} />
         <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/details" element={<Details />} />
+        <Route path="/booking" element={<BookingPage></BookingPage>} />
+        <Route path="/bookingConfirm" element={<BookingConfirm></BookingConfirm>} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>

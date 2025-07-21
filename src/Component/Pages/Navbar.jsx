@@ -6,21 +6,21 @@ import "./Navbar.css"
 
 const Navbar = () => {
     // const navigate = useNavigate();
-    const location = useLocation();
+    // const location = useLocation();
 
     // Check if current page is Home
-    const isHome = location.pathname === "/";
+    // const isHome = location.pathname === "/";
     return (
         <>
-            {/* <nav className="flex justify-between items-center px-10 py-5 bg-white shadow-md navi">
+            <nav className="flex justify-between items-center px-10 py-5 bg-white shadow-md Navi">
                 <div>
-                    <img src={logo} alt="Logo" className="h-25 w-25" />
+                    <img src={logo} alt="Logo" className="h-15 w-25" />
                 </div>
 
                 <div>
-                    <ul className="flex gap-6 font-medium ml-140">
+                    <ul className="flex gap-6 font-medium">
                         <li><NavLink to="/" >Home</NavLink></li>
-                        <li><NavLink to="/explore" >Search</NavLink></li>
+                        <li><NavLink to="/search" >Search</NavLink></li>
                         <li><NavLink to="/how-it-works" >How It Works</NavLink></li>
                         <li><NavLink to="/testimonials">Testimonials</NavLink></li>
                         <li><NavLink to="/login">Log In</NavLink></li>
@@ -30,10 +30,10 @@ const Navbar = () => {
                 <NavLink to="/signup">
                     <button className="Button">Sign Up</button>
                 </NavLink>
-            </nav> */}
+            </nav>
 
-            <div
-                className={isHome ? "navi" : ""}
+            {/* <div
+                className={isHome ? "" : ""}
             // style={isHome ? { backgroundImage: `url(${background1})` } : {}}
             >
                 <nav className=" p-4 text-xl flex justify-between items-center">
@@ -53,7 +53,7 @@ const Navbar = () => {
                         <button className="Button ml-110 text-xl">Sign Up</button>
                     </div>
                 </nav>
-            </div>
+            </div> */}
 
         </>
     );

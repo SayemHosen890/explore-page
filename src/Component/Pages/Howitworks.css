@@ -1,4 +1,4 @@
-.card{
+/* .card{
     color: black;
     text-align: center;
     font-weight: 400;
@@ -8,4 +8,15 @@
     align-items: center;
     justify-content: center;
     padding-top: 130px;
+} */
+
+.text{
+    padding: 20px;
+    text-align: center;
+    font-weight: 400;
+    font-size: x-large;
+}
+.button{
+    border: 10px;
+    text-align: center;
 }
