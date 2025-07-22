@@ -3,6 +3,8 @@ import "./BookingConfirm.css"
 import image from "../../../assets/pic3.jpg"
 import { MdLocationOn } from "react-icons/md";
 import { Link } from 'react-router-dom';
+import { MdOutlineImage } from "react-icons/md";
+
 
 
 const BookingConfirm = () => {
@@ -77,11 +79,53 @@ const BookingConfirm = () => {
                 <button className="bg-[#468F9D] px-6 text-white py-3 rounded-lg transition">
                     View More Spote
                 </button>
-                <Link to ="/home">
-                <button className="bg-[#468F9D] px-6 py-3 text-white rounded-lg transition ml-5">
-                    Back My Home
-                </button>
+                <Link to="/home">
+                    <button className="bg-[#468F9D] px-6 py-3 text-white rounded-lg transition ml-5">
+                        Back My Home
+                    </button>
                 </Link>
+            </div>
+            <div>
+                <div className=" flex items-center justify-center px-4 ml-30 mr-30 mt-20 mb-10 p-20">
+                    <div className="bg-white w-full max-w-screen-xl p-50 md:p-12 rounded-lg shadow-lg">
+
+                        {/* Top Centered Title */}
+                        <h2 className="text-2xl font-semibold text-center mb-6">
+                            Write a Review
+                        </h2>
+
+                        {/* Full-width Input */}
+                        <div className="mb-6  text-left placeholder:text-left">
+                            <input
+                                type="text"
+                                placeholder="Write your reviews and thoughts here"
+                                style={{ textAlign: 'left' }}
+                                className="block w-full border border-gray-400 h-40 rounded-md px-4 py-3 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            />
+                        </div>
+
+                        {/* Full-width Image Upload Box */}
+                        <label className="relative w-full border border-gray-400 rounded-md px-6 py-6 flex items-center justify-center gap-3 cursor-pointer hover:bg-gray-50 transition">
+                            {/* Icon before text */}
+                            <MdOutlineImage className="text-black-500 w-6 h-6" />
+
+                            {/* Upload text */}
+                            <span className="text-gray-600 text-lg">Upload an image</span>
+
+                            {/* Hidden input field */}
+                            <input
+                                type="file"
+                                accept="image/*"
+                                className="absolute inset-0 opacity-0 cursor-pointer"
+                            />
+                        </label>
+                    </div>
+                </div>
+                <div className='mb-20 flex items-center justify-center mx-33'>
+                    <button className="bg-[#468F9D] px-6 text-white py-3 rounded-lg transition w-410 ">
+                        Submit
+                    </button>
+                </div>
             </div>
         </div>
     )
